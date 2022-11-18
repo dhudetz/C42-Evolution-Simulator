@@ -25,9 +25,9 @@ public class Move : MonoBehaviour
         //transform.scale = new Vector3(scale,scale,scale);
         //update the position
         //transform.position = transform.position + new Vector3(horizontalInput * moveSpeed * Time.deltaTime, verticalInput * moveSpeed * Time.deltaTime, 0);
-        transform.position = new Vector3(Random.Range(-randomBound, randomBound), Random.Range(-randomBound, randomBound), 0);
+        transform.position += new Vector3(Random.Range(-randomBound, randomBound), Random.Range(-randomBound, randomBound), 0);
 
         //output to log the position change
-        Debug.Log(transform.position);
+        //Debug.Log(transform.position);
     }
 }
