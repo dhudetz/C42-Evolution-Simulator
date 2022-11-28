@@ -18,6 +18,7 @@ public class Reproduce : MonoBehaviour
     void Update()
     {
         counter++;
+        counter+=Random.Range(1,frameDivider);
         if(counter%frameDivider == 0){
             GameObject child = Instantiate(myPrefab, new Vector3(transform.position.x+Random.Range(-birthingDistance, birthingDistance), transform.position.y+Random.Range(-birthingDistance, birthingDistance), 0), Quaternion.identity);
         }
