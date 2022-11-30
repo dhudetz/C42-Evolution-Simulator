@@ -11,12 +11,10 @@ public class Move : MonoBehaviour
     }
 
     public float moveSpeed = 5.0f;
-    public Vector2 neuralNetworkWeights;
     public float randomBound = 5.0f;
     //private float scale = 0;
     void Update()
     {
-        neuralNetworkWeights.x = 1;
         //scale+=0.1;
         //get the Input from Horizontal axis
         float horizontalInput = Input.GetAxis("Horizontal");

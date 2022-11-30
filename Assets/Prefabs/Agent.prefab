@@ -181,7 +181,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 5
-  neuralNetworkWeights: {x: 0, y: 0}
   randomBound: 0.2
 --- !u!114 &2449331629985950941
 MonoBehaviour:
@@ -197,7 +196,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   myPrefab: {fileID: 2449331629985950881}
   birthingDistance: 1.5
-  frameDivider: 1000
+  timePerBirth: 3
 --- !u!114 &3351551110666353331
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -210,4 +209,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44d3cf0be4d2d974c835dbf8a8f6977b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  targetTime: 10
+  timePerDeath: 5
