@@ -10,22 +10,13 @@ public class Move : MonoBehaviour
         
     }
 
+    // Define move speed
     public float moveSpeed = 5.0f;
-    public float randomBound = 5.0f;
-    //private float scale = 0;
+    
+    // Update function
     void Update()
     {
-        //scale+=0.1;
-        //get the Input from Horizontal axis
-        float horizontalInput = Input.GetAxis("Horizontal");
-        //get the Input from Vertical axis
-        float verticalInput = Input.GetAxis("Vertical");
-        //transform.scale = new Vector3(scale,scale,scale);
-        //update the position
-        //transform.position = transform.position + new Vector3(horizontalInput * moveSpeed * Time.deltaTime, verticalInput * moveSpeed * Time.deltaTime, 0);
-        transform.position += new Vector3(Random.Range(-randomBound, randomBound), Random.Range(-randomBound, randomBound), 0);
-
-        //output to log the position change
-        //Debug.Log(transform.position);
+        // Every update, move the agent by random range
+        transform.position += new Vector3(Random.Range(-moveSpeed, moveSpeed), Random.Range(-moveSpeed, moveSpeed), 0) * Time.deltaTime;
     }
 }
