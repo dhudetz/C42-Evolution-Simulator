@@ -14,9 +14,9 @@ public class Move : MonoBehaviour
     public float moveSpeed = 5.0f;
     
     // Update function
-    void Update()
+    void FixedUpdate()
     {
         // Every update, move the agent by random range
-        transform.position += new Vector3(Random.Range(-moveSpeed, moveSpeed), Random.Range(-moveSpeed, moveSpeed), 0) * Time.deltaTime;
+        transform.position += new Vector3(Random.Range(-moveSpeed, moveSpeed), Random.Range(-moveSpeed, moveSpeed), 0);
     }
 }
